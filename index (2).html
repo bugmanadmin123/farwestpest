@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far West Pest Control Services Ltd. | Ucluelet &amp; Tofino Pest &amp; Rodent Specialists</title>
+    <meta name="description" content="Licensed, insured pest control and rodent specialists serving Ucluelet, Tofino, Hitatsu, Salmon Beach, Esowista, Ty-Histanis, and Macoah. SPMABC member. Residential, commercial, property management & vacation rentals.">
+
+    <!-- Open Graph / Link Preview Image Settings (update og:image to your live https:// image URL) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Far West Pest Control Services Ltd. | Ucluelet &amp; Tofino">
+    <meta property="og:description" content="Licensed, insured pest &amp; rodent control serving Ucluelet, Tofino, and surrounding west coast communities.">
+    <meta property="og:image" content="https://farwestpestcontrol.ca/BC_logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://farwestpestcontrol.ca/BC_logo.png">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration for Red, White & Black Palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            red: '#C81E1E',
+                            crimson: '#991B1B',
+                            darkRed: '#7F1D1D',
+                            black: '#111111',
+                            charcoal: '#1A1A1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans text-brand-black bg-neutral-100 antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Announcement / Dispatch & Inspection Policy Bar -->
+    <div class="bg-brand-black text-neutral-100 text-xs sm:text-sm py-2.5 px-4 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex h-2 w-2 rounded-full bg-brand-red animate-pulse"></span>
+                <span><strong>Ucluelet &amp; Tofino Area:</strong> Residential, Commercial, Property Managers &amp; Vacation Rentals</span>
+            </div>
+            <div class="hidden md:flex items-center gap-5 text-neutral-300">
+                <span class="flex items-center gap-1.5"><i data-lucide="clipboard-check" class="w-4 h-4 text-brand-red"></i> $125 Basic Inspection (No Free Estimates)</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="eye-off" class="w-4 h-4 text-brand-red"></i> Unmarked Vehicles on Request</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo Emblem + Company Name -->
+                <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-12 h-12 rounded-full bg-white border-2 border-brand-black shadow-sm flex items-center justify-center overflow-hidden shrink-0 group-hover:border-brand-red transition-colors">
+                        <img
+                            src="FWPC_Logo_Finished_SVG.svg"
+                            alt="Far West Pest Control Services Ltd. Logo"
+                            class="w-full h-full object-contain p-0.5"
+                        >
+                    </div>
+                    <div>
+                        <span class="block text-xs sm:text-base font-black tracking-tight text-brand-black leading-tight break-words">FAR WEST PEST CONTROL SERVICES LTD.</span>
+                        <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-red leading-none mt-1">Ucluelet &amp; Tofino</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 mr-4 xl:mr-6 text-sm font-bold text-neutral-800">
+                    <a href="#services" class="hover:text-brand-red transition-colors">Services</a>
+                    <a href="#finder" class="hover:text-brand-red transition-colors">Problem Finder</a>
+                    <a href="#commercial" class="hover:text-brand-red transition-colors">Commercial &amp; Rentals</a>
+                    <a href="#about" class="hover:text-brand-red transition-colors">Process &amp; SPMABC</a>
+                    <a href="#reviews" class="hover:text-brand-red transition-colors">Reviews</a>
+                </nav>
+
+                <!-- Desktop Right CTA Group -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="tel:18778673146" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-brand-black font-extrabold text-sm transition-colors">
+                        <i data-lucide="phone" class="w-4 h-4 text-brand-red"></i>
+                        <span>(877) 867-3146</span>
+                    </a>
+                    <button type="button" onclick="focusInspectionForm()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm shadow-sm transition-colors">
+                        <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+                        <span>Book Inspection ($125)</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="tel:18778673146" aria-label="Call Far West Pest Control" class="p-2.5 rounded-xl bg-neutral-100 text-brand-black hover:bg-neutral-200 transition-colors">
+                        <i data-lucide="phone" class="w-5 h-5 text-brand-red"></i>
+                    </a>
+                    <button type="button" id="mobile-menu-btn" aria-label="Toggle Menu" class="p-2.5 rounded-xl bg-brand-black text-white hover:bg-brand-charcoal transition-colors">
+                        <i data-lucide="menu" id="menu-icon-open" class="w-5 h-5"></i>
+                        <i data-lucide="x" id="menu-icon-close" class="w-5 h-5 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-neutral-200 px-4 py-4 space-y-2 shadow-lg">
+            <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-neutral-800 hover:bg-neutral-100">Services</a>
+            <a href="#finder" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-neutral-800 hover:bg-neutral-100">Problem Finder</a>
+            <a href="#commercial" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-neutral-800 hover:bg-neutral-100">Commercial &amp; Rentals</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-neutral-800 hover:bg-neutral-100">Process &amp; SPMABC</a>
+            <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-neutral-800 hover:bg-neutral-100">Reviews</a>
+            <div class="pt-2 border-t border-neutral-100">
+                <button type="button" onclick="focusInspectionForm()" class="w-full py-3 px-4 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm text-center transition-colors">
+                    Book Inspection ($125)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO & INSPECTION REQUEST FORM -->
+    <section class="relative bg-gradient-to-br from-brand-black via-brand-charcoal to-neutral-900 text-white overflow-hidden border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+                <!-- Left Hero Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-extrabold tracking-wide text-neutral-100">
+                        <span class="w-2 h-2 rounded-full bg-brand-red"></span>
+                        <span>Licensed &amp; Insured • SPMABC, CPMA &amp; NPMA Member</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.08]">
+                        Pest &amp; Rodent Control for <span class="text-red-500">Ucluelet, Tofino</span> &amp; West Coast Properties
+                    </h1>
+
+                    <p class="text-sm sm:text-base text-neutral-300 max-w-2xl leading-relaxed">
+                        Residential homes, commercial accounts, property managers, and vacation rentals. We handle rodents, monthly rodent programs, ants, wasps &amp; hornets, spiders, wildlife exclusion, preventative seasonal perimeter sprays, and crawlspace cleanouts.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 pt-1">
+                        <button type="button" onclick="focusInspectionForm()" class="px-5 py-3.5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm inline-flex items-center gap-2 shadow-lg transition-all">
+                            <span>Request Inspection ($125 Basic)</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                        <a href="#services" class="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-extrabold text-sm inline-flex items-center gap-2 transition-all">
+                            <span>View All Services</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust & Policy Highlights -->
+                    <div class="grid sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
+                        <div class="flex items-start gap-2.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="clipboard-check" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-bold text-white">$125 Basic Inspection</p>
+                                <p class="text-xs text-neutral-400">No free estimates. Extra for difficult jobs, &gt;1 hr, or travel outside Ucluelet/Tofino.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-bold text-white">Guarantees &amp; Re-Treatments</p>
+                                <p class="text-xs text-neutral-400">Backed by service guarantees, re-treatments, and unmarked vehicles on request.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand & Association Logos Card -->
+                    <div class="bg-white text-brand-black rounded-2xl p-4 sm:p-5 border border-neutral-200 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-3.5 w-full sm:w-auto">
+                            <img
+                                src="FWPC_Logo_Finished_SVG.svg"
+                                alt="Far West Pest Control Services Ltd. Full Logo"
+                                class="w-16 h-16 sm:w-20 sm:h-20 object-contain shrink-0"
+                            >
+                            <div class="min-w-0">
+                                <p class="text-xs font-black uppercase tracking-wider text-brand-red">Far West Pest Control Services Ltd.</p>
+                                <p class="text-xs text-neutral-600 mt-0.5 break-words">Ucluelet &amp; Tofino • (877) 867-3146 • bugman@farwestpestcontrol.ca</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center sm:justify-end gap-2 sm:gap-2.5 w-full sm:w-auto shrink-0">
+                            <div class="w-16 h-16 bg-neutral-50 rounded-xl p-1.5 border border-neutral-200 flex flex-col items-center justify-center text-center">
+                                <img
+                                    src="BC_logo.png"
+                                    alt="SPMABC Logo"
+                                    class="w-10 h-10 object-contain"
+                                >
+                                <span class="text-[9px] font-extrabold uppercase text-neutral-700 leading-none mt-0.5">SPMABC</span>
+                            </div>
+                            <div class="w-16 h-16 bg-neutral-50 rounded-xl p-1.5 border border-neutral-200 flex flex-col items-center justify-center text-center">
+                                <img
+                                    src="88187b_8e4aac34fa104d76a7819380d3a54485~mv2.avif"
+                                    alt="CPMA Logo"
+                                    class="w-12 h-8 object-contain"
+                                >
+                                <span class="text-[9px] font-extrabold uppercase text-neutral-700 leading-none mt-1">CPMA</span>
+                            </div>
+                            <div class="w-16 h-16 bg-neutral-50 rounded-xl p-1.5 border border-neutral-200 flex flex-col items-center justify-center text-center">
+                                <img
+                                    src="88187b_fba5169d3441446e8d50dd32ef77f7da~mv2.avif"
+                                    alt="NPMA Logo"
+                                    class="w-10 h-10 object-contain"
+                                >
+                                <span class="text-[9px] font-extrabold uppercase text-neutral-700 leading-none mt-0.5">NPMA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Inspection Request Card -->
+                <div id="inspection-request" class="lg:col-span-5 bg-white text-brand-black rounded-2xl p-6 sm:p-8 shadow-2xl border border-neutral-200">
+                    <div class="border-b border-neutral-100 pb-4 mb-5">
+                        <span class="text-[11px] font-black uppercase tracking-wider text-brand-red">Inspection &amp; Service Request</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-brand-black mt-0.5">Book a Basic Inspection ($125)</h2>
+                        <p class="text-xs text-neutral-600 mt-1">No free estimates. $125 basic inspection; additional charges apply for difficult inspections, &gt;1 hour, or travel outside Ucluelet or Tofino.</p>
+                    </div>
+
+                    <form id="inspection-quote-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-3.5">
+                            <div>
+                                <label for="req-name" class="block text-xs font-bold text-neutral-800 mb-1">Your Name *</label>
+                                <input type="text" id="req-name" required placeholder="Full name" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label for="req-phone" class="block text-xs font-bold text-neutral-800 mb-1">Phone Number *</label>
+                                <input type="tel" id="req-phone" required placeholder="(250) 555-0199" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-3.5">
+                            <div>
+                                <label for="req-client-type" class="block text-xs font-bold text-neutral-800 mb-1">Property / Client Type</label>
+                                <select id="req-client-type" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red outline-none text-sm bg-white">
+                                    <option value="Residential Homeowner">Residential Homeowner</option>
+                                    <option value="Commercial Account">Commercial Account</option>
+                                    <option value="Property Manager">Property Manager</option>
+                                    <option value="Vacation Rental Company">Vacation Rental Company</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="req-area" class="block text-xs font-bold text-neutral-800 mb-1">Service Area</label>
+                                <select id="req-area" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red outline-none text-sm bg-white">
+                                    <option value="Ucluelet">Ucluelet</option>
+                                    <option value="Tofino">Tofino</option>
+                                    <option value="Hitatsu">Hitatsu</option>
+                                    <option value="Salmon Beach">Salmon Beach (+Travel)</option>
+                                    <option value="Esowista">Esowista</option>
+                                    <option value="Ty-Histanis">Ty-Histanis</option>
+                                    <option value="Macoah">Macoah (+Travel)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="req-service" class="block text-xs font-bold text-neutral-800 mb-1">Pest or Service Needed</label>
+                            <select id="req-service" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red outline-none text-sm bg-white">
+                                <option value="Rodent Control & Monthly Program">Rodent Control &amp; Monthly Rodent Program</option>
+                                <option value="Ant Control">Ant Control</option>
+                                <option value="Wasps & Hornets">Wasps &amp; Hornets</option>
+                                <option value="Spider Control">Spider Control</option>
+                                <option value="Wildlife Exclusion">Wildlife Exclusion</option>
+                                <option value="Preventative Seasonal Perimeter Spray">Preventative Seasonal Perimeter Spray</option>
+                                <option value="Crawlspace Cleanout">Crawlspace Cleanout</option>
+                                <option value="Commercial / Rental Program">Commercial / Property Manager / Vacation Rental</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="req-notes" class="block text-xs font-bold text-neutral-800 mb-1">Details / Access / Unmarked Vehicle Request</label>
+                            <textarea id="req-notes" rows="2.5" placeholder="Tell us what you're seeing, crawlspace/unit access notes, or if you'd like an unmarked vehicle..." class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 px-5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm shadow-md transition-all">
+                            Submit Inspection Request
+                        </button>
+                    </form>
+
+                    <div id="quote-success" class="hidden p-5 rounded-2xl bg-neutral-50 border border-neutral-200 space-y-3 text-center">
+                        <p class="text-base font-black text-brand-black">Request Logged</p>
+                        <p id="quote-success-msg" class="text-xs sm:text-sm text-neutral-700"></p>
+                        <p class="text-xs text-neutral-500">Need immediate assistance? Call <a href="tel:18778673146" class="font-bold text-brand-red underline">(877) 867-3146</a> or email <a href="mailto:bugman@farwestpestcontrol.ca" class="font-bold text-brand-red underline">bugman@farwestpestcontrol.ca</a>.</p>
+                        <button type="button" onclick="resetQuoteForm()" class="px-4 py-2 rounded-xl bg-brand-black text-white text-xs font-bold hover:bg-brand-charcoal transition-colors">
+                            Send Another Request
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SERVICES CATALOG (#services) -->
+    <section id="services" class="py-16 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-brand-red text-xs font-extrabold uppercase tracking-wider mb-3">
+                    <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                    <span>Core Services</span>
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-black text-brand-black tracking-tight">Targeted Pest &amp; Rodent Solutions</h2>
+                <p class="text-sm sm:text-base text-neutral-600 mt-2 max-w-2xl">
+                    From active rodent &amp; monthly programs to wildlife exclusion, seasonal perimeter sprays, and crawlspace cleanouts across the west coast.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="inline-flex rounded-xl bg-white p-1 border border-neutral-200 shadow-xs self-start md:self-auto">
+                <button type="button" id="tab-all" onclick="filterServices('all')" class="service-tab px-4 py-2 rounded-lg text-xs sm:text-sm font-extrabold bg-brand-black text-white shadow-sm transition-all">
+                    All Services
+                </button>
+                <button type="button" id="tab-residential" onclick="filterServices('residential')" class="service-tab px-4 py-2 rounded-lg text-xs sm:text-sm font-extrabold text-neutral-800 hover:text-brand-red transition-all">
+                    Residential
+                </button>
+                <button type="button" id="tab-commercial" onclick="filterServices('commercial')" class="service-tab px-4 py-2 rounded-lg text-xs sm:text-sm font-extrabold text-neutral-800 hover:text-brand-red transition-all">
+                    Commercial &amp; Rentals
+                </button>
+            </div>
+        </div>
+
+        <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </section>
+
+    <!-- INTERACTIVE PROBLEM FINDER & INSPECTION GUIDE (#finder) -->
+    <section id="finder" class="py-16 lg:py-20 bg-brand-black text-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-10">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-red/20 border border-brand-red/40 text-red-300 text-xs font-extrabold uppercase tracking-wider mb-3">
+                    <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+                    <span>Interactive Problem Finder</span>
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-black tracking-tight">Match Your Property &amp; Pest Issue</h2>
+                <p class="text-sm sm:text-base text-neutral-300 mt-2">
+                    Select your property type, pest or service concern, and location to see how we approach the job and how the <strong>$125 basic inspection</strong> rate applies.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- Left Controls -->
+                <div class="lg:col-span-7 space-y-6 bg-brand-charcoal p-6 sm:p-8 rounded-2xl border border-neutral-800">
+                    <!-- Step 1: Client Type -->
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-wider text-neutral-400 mb-3">1. Property / Account Type</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <button type="button" data-val="residential" onclick="updateFinder('client', 'residential')" class="finder-client-btn p-3.5 rounded-xl border-2 border-brand-red bg-brand-red/15 text-left transition-all">
+                                <span class="block text-xs sm:text-sm font-black text-white">Residential</span>
+                                <span class="block text-[11px] text-neutral-300 mt-0.5">Homeowner</span>
+                            </button>
+                            <button type="button" data-val="commercial" onclick="updateFinder('client', 'commercial')" class="finder-client-btn p-3.5 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs sm:text-sm font-black text-white">Commercial</span>
+                                <span class="block text-[11px] text-neutral-400 mt-0.5">Business</span>
+                            </button>
+                            <button type="button" data-val="property-manager" onclick="updateFinder('client', 'property-manager')" class="finder-client-btn p-3.5 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs sm:text-sm font-black text-white">Property Mgr</span>
+                                <span class="block text-[11px] text-neutral-400 mt-0.5">Multi-unit</span>
+                            </button>
+                            <button type="button" data-val="vacation-rental" onclick="updateFinder('client', 'vacation-rental')" class="finder-client-btn p-3.5 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs sm:text-sm font-black text-white">Vacation Rental</span>
+                                <span class="block text-[11px] text-neutral-400 mt-0.5">Turnovers</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Pest / Service -->
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-wider text-neutral-400 mb-3">2. Pest or Service Focus</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <button type="button" data-val="rodents" onclick="updateFinder('service', 'rodents')" class="finder-srv-btn p-3 rounded-xl border-2 border-brand-red bg-brand-red/15 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Rodents &amp; Monthly</span>
+                            </button>
+                            <button type="button" data-val="ants" onclick="updateFinder('service', 'ants')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Ants</span>
+                            </button>
+                            <button type="button" data-val="wasps" onclick="updateFinder('service', 'wasps')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Wasps &amp; Hornets</span>
+                            </button>
+                            <button type="button" data-val="spiders" onclick="updateFinder('service', 'spiders')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Spiders</span>
+                            </button>
+                            <button type="button" data-val="exclusion" onclick="updateFinder('service', 'exclusion')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Wildlife Exclusion</span>
+                            </button>
+                            <button type="button" data-val="perimeter" onclick="updateFinder('service', 'perimeter')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Perimeter Spray</span>
+                            </button>
+                            <button type="button" data-val="crawlspace" onclick="updateFinder('service', 'crawlspace')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Crawlspace Cleanout</span>
+                            </button>
+                            <button type="button" data-val="commercial-program" onclick="updateFinder('service', 'commercial-program')" class="finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all">
+                                <span class="block text-xs font-black text-white">Commercial / Rental</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Location -->
+                    <div>
+                        <label for="finder-location" class="block text-xs font-extrabold uppercase tracking-wider text-neutral-400 mb-2">3. Location</label>
+                        <select id="finder-location" onchange="updateFinder('location', this.value)" class="w-full sm:w-80 px-4 py-3 rounded-xl bg-brand-black border border-neutral-700 focus:border-brand-red outline-none text-sm text-white font-semibold">
+                            <option value="Ucluelet">Ucluelet</option>
+                            <option value="Tofino">Tofino</option>
+                            <option value="Hitatsu">Hitatsu</option>
+                            <option value="Salmon Beach">Salmon Beach</option>
+                            <option value="Esowista">Esowista</option>
+                            <option value="Ty-Histanis">Ty-Histanis</option>
+                            <option value="Macoah">Macoah</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Right Summary Card -->
+                <div class="lg:col-span-5 bg-white text-brand-black rounded-2xl p-6 sm:p-8 shadow-2xl border border-neutral-200 space-y-5">
+                    <div class="flex items-center justify-between gap-2">
+                        <span id="plan-badge" class="px-3 py-1 rounded-full bg-red-50 border border-red-200 text-brand-red text-xs font-extrabold">Residential Home • Ucluelet</span>
+                        <span id="plan-rate" class="text-xl font-black text-brand-black">$125+</span>
+                    </div>
+
+                    <div>
+                        <h3 id="plan-title" class="text-xl font-black text-brand-black">Rodent Control &amp; Monthly Rodent Programs</h3>
+                        <p id="plan-rate-sub" class="text-xs font-semibold text-neutral-500 mt-0.5">Basic inspection in Ucluelet is $125</p>
+                    </div>
+
+                    <ul id="plan-steps" class="space-y-2.5 text-xs sm:text-sm text-neutral-700 border-y border-neutral-100 py-4"></ul>
+
+                    <p id="plan-note" class="text-xs text-neutral-600 leading-relaxed"></p>
+
+                    <button type="button" onclick="applyFinderToForm()" class="w-full py-3.5 px-5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm flex items-center justify-center gap-2 transition-all">
+                        <span>Send Selection to Inspection Form</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMERCIAL, PROPERTY MANAGERS & VACATION RENTALS (#commercial) -->
+    <section id="commercial" class="py-16 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="bg-white rounded-3xl border border-neutral-200 p-6 sm:p-10 lg:p-12 shadow-sm">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-brand-black text-xs font-extrabold uppercase tracking-wider">
+                        <i data-lucide="building-2" class="w-3.5 h-3.5 text-brand-red"></i>
+                        <span>Commercial, Property Managers &amp; Vacation Rentals</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-black text-brand-black tracking-tight">Dependable Coverage for Businesses &amp; Rentals</h2>
+                    <p class="text-sm sm:text-base text-neutral-600 leading-relaxed">
+                        We support commercial accounts, property managers, and vacation rental companies across Ucluelet, Tofino, and nearby communities with scheduled monthly rodent programs, seasonal perimeter sprays, exclusion work, and discreet unmarked vehicles on request.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm font-semibold text-neutral-800">
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                            <i data-lucide="calendar-check" class="w-4 h-4 text-brand-red shrink-0"></i>
+                            <span>Monthly rodent &amp; seasonal programs</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                            <i data-lucide="eye-off" class="w-4 h-4 text-brand-red shrink-0"></i>
+                            <span>Unmarked vehicles available on request</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-brand-red shrink-0"></i>
+                            <span>Service guarantees &amp; re-treatments</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                            <i data-lucide="award" class="w-4 h-4 text-brand-red shrink-0"></i>
+                            <span>SPMABC, CPMA &amp; NPMA member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 bg-brand-black text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h3 class="text-xl font-black">Set Up Commercial or Rental Service</h3>
+                    <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                        Basic inspections start at <strong>$125</strong> (no free estimates), with additional charges for difficult inspections, jobs over 1 hour, or travel outside Ucluelet or Tofino.
+                    </p>
+                    <button type="button" onclick="prefillQuote('Property Manager', 'Commercial / Rental Program', 'Commercial, property management, or vacation rental inquiry')" class="w-full py-3.5 px-5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-black text-sm transition-all">
+                        Request Account Inspection
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS & ASSOCIATIONS (#about) -->
+    <section id="about" class="py-12 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="max-w-2xl mb-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-brand-red text-xs font-extrabold uppercase tracking-wider mb-3">
+                <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                <span>Process &amp; Credentials</span>
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-black text-brand-black tracking-tight">How We Work &amp; Industry Memberships</h2>
+            <p class="text-sm sm:text-base text-neutral-600 mt-2">
+                Licensed, insured, and backed by service guarantees/re-treatments as members of <strong>SPMABC</strong>, <strong>CPMA</strong>, and <strong>NPMA</strong>.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs">
+                <span class="inline-flex w-8 h-8 rounded-lg bg-brand-red text-white font-black text-sm items-center justify-center mb-4">1</span>
+                <h3 class="text-lg font-black text-brand-black">Thorough Inspection ($125 Base)</h3>
+                <p class="text-xs sm:text-sm text-neutral-600 mt-2 leading-relaxed">
+                    We inspect the property to identify pest activity, entry points, and conditions. Basic inspections are $125 (no free estimates), with extra charges for difficult access, over 1 hour, or travel outside Ucluelet/Tofino.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs">
+                <span class="inline-flex w-8 h-8 rounded-lg bg-brand-red text-white font-black text-sm items-center justify-center mb-4">2</span>
+                <h3 class="text-lg font-black text-brand-black">Targeted Treatment &amp; Exclusion</h3>
+                <p class="text-xs sm:text-sm text-neutral-600 mt-2 leading-relaxed">
+                    We apply targeted pest treatments, monthly rodent programs, seasonal perimeter sprays, wildlife exclusion, or crawlspace cleanouts tailored to your property—with unmarked vehicles on request.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs">
+                <span class="inline-flex w-8 h-8 rounded-lg bg-brand-red text-white font-black text-sm items-center justify-center mb-4">3</span>
+                <h3 class="text-lg font-black text-brand-black">Service Guarantees &amp; Follow-Through</h3>
+                <p class="text-xs sm:text-sm text-neutral-600 mt-2 leading-relaxed">
+                    Our work is backed by service guarantees and re-treatments, supported by our membership in the Structural Pest Management Association of BC (SPMABC), CPMA, and NPMA.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL REVIEWS (#reviews) -->
+    <section id="reviews" class="py-14 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-brand-red text-xs font-extrabold uppercase tracking-wider mb-3">
+                    <i data-lucide="message-square-quote" class="w-3.5 h-3.5"></i>
+                    <span>Google Reviews</span>
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-black text-brand-black tracking-tight">Trusted Across the West Coast</h2>
+                <p id="google-reviews-status" class="text-xs text-neutral-500 mt-1.5">
+                    Powered by Trustindex Google Reviews.
+                </p>
+            </div>
+            <p class="text-xs font-bold text-neutral-500">Ucluelet • Tofino • Hitatsu • Salmon Beach • Esowista • Ty-Histanis • Macoah</p>
+        </div>
+
+        <!-- Paste your third-party Google Business review widget embed snippet inside #google-review-widget-embed -->
+        <div id="google-review-widget-embed" class="hidden w-full max-w-full overflow-x-hidden bg-white rounded-2xl border border-neutral-200 p-3 sm:p-6 shadow-xs">
+            <script defer async src='https://cdn.trustindex.io/loader.js?e0384ca86dbb664ebf36b2fc3c0'></script>
+        </div>
+
+        <div id="reviews-grid" class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs flex flex-col justify-between">
+                <p class="text-sm text-neutral-700 leading-relaxed">&ldquo;Clear communication from the start, thorough inspection, and dependable monthly rodent service for our coastal home and rental unit.&rdquo;</p>
+                <div class="mt-4 pt-3 border-t border-neutral-100">
+                    <p class="text-xs font-black text-brand-black">Homeowner &amp; Rental Host</p>
+                    <p class="text-[11px] text-neutral-500">Ucluelet, BC • Google Review</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs flex flex-col justify-between">
+                <p class="text-sm text-neutral-700 leading-relaxed">&ldquo;Handled wildlife exclusion and a crawlspace cleanout cleanly and professionally. Having unmarked vehicles available when needed is a big plus for our guests.&rdquo;</p>
+                <div class="mt-4 pt-3 border-t border-neutral-100">
+                    <p class="text-xs font-black text-brand-black">Vacation Rental Operator</p>
+                    <p class="text-[11px] text-neutral-500">Tofino, BC • Google Review</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs flex flex-col justify-between">
+                <p class="text-sm text-neutral-700 leading-relaxed">&ldquo;Straightforward inspection pricing, solid follow-through, and reliable seasonal perimeter and pest control for our commercial property.&rdquo;</p>
+                <div class="mt-4 pt-3 border-t border-neutral-100">
+                    <p class="text-xs font-black text-brand-black">Commercial &amp; Property Account</p>
+                    <p class="text-[11px] text-neutral-500">West Coast BC • Google Review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-black text-neutral-300 pt-14 pb-10 border-t border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top Row: Brand, Logo & SPMABC -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-neutral-800">
+                
+                <!-- Col 1: Brand, Logo & SPMABC -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-white border-2 border-brand-red flex items-center justify-center overflow-hidden shrink-0">
+                            <img
+                                src="FWPC_Logo_Finished_SVG.svg"
+                                alt="Far West Pest Control Services Ltd. Logo"
+                                class="w-full h-full object-contain p-0.5"
+                            >
+                        </div>
+                        <div>
+                            <span class="block text-sm font-black tracking-tight text-white leading-tight">FAR WEST PEST CONTROL SERVICES LTD.</span>
+                            <span class="block text-[10px] font-bold uppercase tracking-wider text-red-400 mt-1">Ucluelet &amp; Tofino</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Serving Ucluelet, Tofino, and surrounding west coast communities. Licensed, insured, SPMABC, CPMA &amp; NPMA member, service guarantees &amp; re-treatments, unmarked vehicles on request.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                        <div class="w-12 h-12 rounded-xl bg-white p-1.5 border border-neutral-700 flex items-center justify-center shrink-0" title="SPMABC Member">
+                            <img
+                                src="BC_logo.png"
+                                alt="Structural Pest Management Association of BC (SPMABC) Logo"
+                                class="w-full h-full object-contain"
+                            >
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-white p-1.5 border border-neutral-700 flex items-center justify-center shrink-0" title="CPMA Member">
+                            <img
+                                src="88187b_8e4aac34fa104d76a7819380d3a54485~mv2.avif"
+                                alt="Canadian Pest Management Association (CPMA) Logo"
+                                class="w-full h-full object-contain"
+                            >
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-white p-1.5 border border-neutral-700 flex items-center justify-center shrink-0" title="NPMA Member">
+                            <img
+                                src="88187b_fba5169d3441446e8d50dd32ef77f7da~mv2.avif"
+                                alt="National Pest Management Association (NPMA) Logo"
+                                class="w-full h-full object-contain"
+                            >
+                        </div>
+                        <span class="text-xs font-semibold text-neutral-300 leading-snug">SPMABC, CPMA &amp; NPMA Member</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div>
+                    <h3 class="text-sm font-black uppercase tracking-wider text-white mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm text-neutral-400">
+                        <li><a href="#services" onclick="filterServices('all')" class="hover:text-red-400 transition-colors">Rodent Control &amp; Monthly Programs</a></li>
+                        <li><a href="#services" onclick="filterServices('all')" class="hover:text-red-400 transition-colors">Ant, Wasp/Hornet &amp; Spider Control</a></li>
+                        <li><a href="#services" onclick="filterServices('all')" class="hover:text-red-400 transition-colors">Wildlife Exclusion &amp; Crawlspace Cleanouts</a></li>
+                        <li><a href="#commercial" class="hover:text-red-400 transition-colors">Commercial, Property Mgr &amp; Rentals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Service Areas -->
+                <div>
+                    <h3 class="text-sm font-black uppercase tracking-wider text-white mb-4">Service Areas</h3>
+                    <p class="text-xs text-neutral-400 mb-3">Ucluelet &amp; Tofino core area plus surrounding communities (travel charges apply outside Ucluelet/Tofino):</p>
+                    <div class="grid grid-cols-2 gap-y-2 gap-x-2 text-xs font-semibold text-neutral-300">
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Ucluelet</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Tofino</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Hitatsu</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Salmon Beach</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Esowista</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Ty-Histanis</span>
+                        <span class="flex items-center gap-1.5 col-span-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-red"></i> Macoah</span>
+                    </div>
+                </div>
+
+                <!-- Col 4: Contact & Inspection Policy -->
+                <div>
+                    <h3 class="text-sm font-black uppercase tracking-wider text-white mb-4">Contact &amp; Inspections</h3>
+                    <div class="space-y-2.5 text-sm">
+                        <p class="font-extrabold text-white flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-brand-red"></i>
+                            <a href="tel:18778673146" class="hover:text-red-400">(877) 867-3146</a>
+                        </p>
+                        <p class="text-neutral-300 flex items-center gap-2 text-xs">
+                            <i data-lucide="mail" class="w-4 h-4 text-brand-red"></i>
+                            <a href="mailto:bugman@farwestpestcontrol.ca" class="hover:text-white">bugman@farwestpestcontrol.ca</a>
+                        </p>
+                        <p class="text-xs text-neutral-400 pt-2 border-t border-neutral-800 leading-relaxed">
+                            Basic inspection: <strong class="text-white">$125</strong> (no free estimates). Additional charges for difficult inspections, &gt;1 hour, or travel outside Ucluelet or Tofino.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+                <p>&copy; <span id="current-year">2026</span> Far West Pest Control Services Ltd. All rights reserved.</p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <button type="button" onclick="openPrivacyModal()" class="text-neutral-300 hover:text-white font-semibold underline underline-offset-4 transition-colors">
+                        Privacy Policy
+                    </button>
+                    <span>•</span>
+                    <button type="button" onclick="openTermsModal()" class="text-neutral-300 hover:text-white font-semibold underline underline-offset-4 transition-colors">
+                        Terms &amp; Conditions
+                    </button>
+                    <span>•</span>
+                    <span>SPMABC, CPMA &amp; NPMA Member</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRIVACY POLICY POP-UP MODAL -->
+    <div id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/75 backdrop-blur-xs p-4 sm:p-6">
+        <div class="min-h-full flex items-center justify-center">
+            <div class="relative w-full max-w-3xl bg-white text-brand-black rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden my-6">
+                
+                <!-- Modal Header -->
+                <div class="bg-brand-black text-white px-6 py-5 flex items-center justify-between gap-4 border-b border-neutral-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/20 border border-brand-red/40 text-red-400 flex items-center justify-center shrink-0">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 id="privacy-modal-title" class="text-lg sm:text-xl font-black tracking-tight text-white">Privacy Policy</h2>
+                            <p class="text-xs text-neutral-400">Far West Pest Control Services Ltd. • Effective November 26, 2026</p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="closePrivacyModal()" aria-label="Close Privacy Policy" class="p-2 rounded-lg text-neutral-300 hover:text-white hover:bg-white/10 transition-colors">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="p-6 sm:p-8 space-y-6 max-h-[72vh] overflow-y-auto text-sm text-neutral-700 leading-relaxed">
+                    
+                    <div class="p-4 rounded-xl bg-neutral-100 border border-neutral-200 text-xs sm:text-sm text-neutral-800">
+                        <strong>Far West Pest Control Services Ltd.</strong> respects your privacy and is committed to protecting personal and business information collected when you contact us, request an inspection or service, or visit our website serving Ucluelet, Tofino, and surrounding communities.
+                    </div>
+
+                    <section class="space-y-2">
+                        <h3 class="text-base font-black text-brand-black flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md bg-brand-red text-white text-xs font-black flex items-center justify-center">1</span>
+                            Information We Collect
+                        </h3>
+                        <p>We collect information you voluntarily provide to us when calling, emailing, submitting an inspection or service request form, or setting up a residential, commercial, property management, or vacation rental account. This may include:</p>
+                        <ul class="list-disc pl-6 space-y-1 text-neutral-700">
+                            <li><strong>Contact &amp; Account Details:</strong> Your name, phone number, email address, and business, property management, or vacation rental company name.</li>
+                            <li><strong>Property &amp; Service Details:</strong> Service location (such as Ucluelet, Tofino, Hitatsu, Salmon Beach, Esowista, Ty-Histanis, or Macoah), property type, access or crawlspace notes, pest or service type requested, and requests for unmarked vehicles.</li>
+                            <li><strong>Billing &amp; Service Records:</strong> Inspection and service records, scheduling details, re-treatment/guarantee tracking, and payment or invoicing information related to our services (including our $125 basic inspection and any applicable travel or extended time charges).</li>
+                            <li><strong>Website &amp; Communication Data:</strong> Basic technical browser information and records of inquiries or messages sent to <a href="mailto:bugman@farwestpestcontrol.ca" class="text-brand-red font-semibold underline">bugman@farwestpestcontrol.ca</a> or <a href="tel:18778673146" class="text-brand-red font-semibold underline">(877) 867-3146</a>.</li>
+                        </ul>
+                    </section>
+
+                    <section class="space-y-2">
+                        <h3 class="text-base font-black text-brand-black flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md bg-brand-red text-white text-xs font-black flex items-center justify-center">2</span>
+                            How We Use Your Information
+                        </h3>
+                        <p>We use the information we collect to operate, deliver, and improve our pest control and rodent management services, including to:</p>
+                        <ul class="list-disc pl-6 space-y-1 text-neutral-700">
+                            <li>Schedule, confirm, and perform inspections, treatments, seasonal perimeter sprays, monthly rodent programs, wildlife exclusion, and crawlspace cleanouts.</li>
+                            <li>Communicate with homeowners, tenants, commercial contacts, property managers, and vacation rental operators regarding appointments, property access, service reports, and follow-ups or re-treatments.</li>
+                            <li>Provide billing, receipts, and account administration, and comply with applicable legal, licensing, and industry obligations (such as Structural Pest Management Association of BC standards).</li>
+                            <li>Respond to your questions, protect our business and customers against fraud or misuse, and maintain accurate service records.</li>
+                        </ul>
+                    </section>
+
+                    <section class="space-y-2">
+                        <h3 class="text-base font-black text-brand-black flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md bg-brand-red text-white text-xs font-black flex items-center justify-center">3</span>
+                            How We Share Information &amp; SMS Privacy
+                        </h3>
+                        <p>We do not sell your personal information. We may share information only as reasonably necessary for business operations, such as with authorized service personnel, billing or IT/communications service providers working on our behalf, property owners or authorized managers involved in a requested service, or when required by law or legal process.</p>
+                        <div class="p-4 rounded-xl bg-red-50 border-2 border-brand-red/30 text-brand-black font-semibold">
+                            SMS opt-in or phone numbers for the purpose of SMS are not being shared with any third party and affiliate company for marketing purposes.
+                        </div>
+                    </section>
+
+                    <section class="space-y-2">
+                        <h3 class="text-base font-black text-brand-black flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md bg-brand-red text-white text-xs font-black flex items-center justify-center">4</span>
+                            Data Retention, Security &amp; Your Choices
+                        </h3>
+                        <p>We take reasonable administrative, physical, and technical measures to safeguard your information against unauthorized access, loss, or disclosure, and retain records only as long as needed for service delivery, guarantee/re-treatment tracking, accounting, and legal compliance.</p>
+                        <p>You may contact us at any time to request access to, correction of, or deletion of your personal information (subject to applicable legal and record-keeping requirements).</p>
+                    </section>
+
+                    <section class="space-y-2">
+                        <h3 class="text-base font-black text-brand-black flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md bg-brand-red text-white text-xs font-black flex items-center justify-center">5</span>
+                            Contact Us About Privacy
+                        </h3>
+                        <p>If you have questions about this Privacy Policy or how your information is handled, contact <strong>Far West Pest Control Services Ltd.</strong>:</p>
+                        <div class="grid sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm">
+                            <div class="p-3 rounded-xl bg-neutral-100 border border-neutral-200">
+                                <span class="block text-[11px] font-extrabold uppercase text-neutral-500">Phone</span>
+                                <a href="tel:18778673146" class="font-bold text-brand-black hover:text-brand-red">(877) 867-3146</a>
+                            </div>
+                            <div class="p-3 rounded-xl bg-neutral-100 border border-neutral-200">
+                                <span class="block text-[11px] font-extrabold uppercase text-neutral-500">Email</span>
+                                <a href="mailto:bugman@farwestpestcontrol.ca" class="font-bold text-brand-black hover:text-brand-red">bugman@farwestpestcontrol.ca</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="bg-neutral-100 px-6 py-4 border-t border-neutral-200 flex items-center justify-between gap-4">
+                    <span class="text-xs text-neutral-500">Far West Pest Control Services Ltd.</span>
+                    <button type="button" onclick="closePrivacyModal()" class="px-5 py-2.5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-extrabold text-xs sm:text-sm transition-colors">
+                        Close Privacy Policy
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS & CONDITIONS / SMS TERMS & CONDITIONS POP-UP MODAL -->
+    <div id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/75 backdrop-blur-xs p-4 sm:p-6">
+        <div class="min-h-full flex items-center justify-center">
+            <div class="relative w-full max-w-3xl bg-white text-brand-black rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden my-6">
+
+                <!-- Modal Header -->
+                <div class="bg-brand-black text-white px-6 py-5 flex items-center justify-between gap-4 border-b border-neutral-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-red/20 border border-brand-red/40 text-red-400 flex items-center justify-center shrink-0">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 id="terms-modal-title" class="text-lg sm:text-xl font-black tracking-tight text-white">Terms &amp; Conditions — SMS Terms &amp; Conditions</h2>
+                            <p class="text-xs text-neutral-400">Far West Pest Control Services Ltd.</p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="closeTermsModal()" aria-label="Close Terms and Conditions" class="p-2 rounded-lg text-neutral-300 hover:text-white hover:bg-white/10 transition-colors">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="p-6 sm:p-8 space-y-5 max-h-[72vh] overflow-y-auto text-sm text-neutral-700 leading-relaxed">
+
+                    <div class="p-4 rounded-xl bg-neutral-100 border border-neutral-200">
+                        <h3 class="text-base font-black text-brand-black">SMS Terms &amp; Conditions</h3>
+                        <p class="text-xs text-neutral-600 mt-0.5">Far West Pest Control Services Ltd.</p>
+                    </div>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">1- SMS Consent Communication:</h4>
+                        <p>Information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.</p>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">2- Types of SMS Communications:</h4>
+                        <p>If consent has been given to receive text messages from Far West Pest Control, messages may be received related to the following:</p>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Appointment reminders</li>
+                            <li>Follow-up messages</li>
+                        </ul>
+                        <div class="mt-2 p-3.5 rounded-xl bg-neutral-100 border border-neutral-200 text-xs sm:text-sm italic text-neutral-800">
+                            Example: &ldquo;Hello, this is a reminder of your upcoming appointment with Technician [Name] at [Location] on [Date] at [Time]. Reply STOP to opt out of SMS messaging at any time.&rdquo;
+                        </div>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">3- Message Frequency:</h4>
+                        <p>Message frequency may vary depending on the type of communication. For example, up to 20 SMS messages per week may be received related to your inquiries.</p>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">4- Potential Fees for SMS Messaging:</h4>
+                        <p>Standard message and data rates may apply, depending on the carrier&rsquo;s pricing plan. These fees may vary if the message is sent domestically or internationally.</p>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">5- Opt-In Method:</h4>
+                        <p>Opt-in to receive SMS messages from Far West Pest Control, can be done in the following ways:</p>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>verbally during a conversation</li>
+                        </ul>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">6- Opt-Out Method:</h4>
+                        <p>Opting out of receiving SMS messages can be done at any time by replying &ldquo;STOP&rdquo; to any SMS message received. Alternatively, direct contact can be made to request removal from the messaging list.</p>
+                    </section>
+
+                    <section class="space-y-1.5">
+                        <h4 class="font-black text-brand-black">7- Help:</h4>
+                        <p>For any issues, reply with the keyword HELP. Alternatively, help can be obtained directly from us at <a href="https://farwestpestcontrol.ca" target="_blank" rel="noopener noreferrer" class="text-brand-red font-semibold underline">https://farwestpestcontrol.ca</a>.</p>
+                        <p class="pt-1 text-neutral-700"><strong>Additional Options:</strong> If SMS messages are not desired, the SMS consent box on forms can be left unchecked.</p>
+                    </section>
+
+                    <section class="space-y-1.5 pt-2 border-t border-neutral-200">
+                        <h4 class="font-black text-brand-black">8- Standard Messaging Disclosures:</h4>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Message and data rates may apply.</li>
+                            <li>Opt out at any time by texting &ldquo;STOP.&rdquo;</li>
+                            <li>For assistance, text &ldquo;HELP&rdquo; or visit our <button type="button" onclick="switchToPrivacyModal()" class="text-brand-red font-semibold underline">Privacy Policy</button> and <button type="button" onclick="openTermsModal()" class="text-brand-red font-semibold underline">Terms and Conditions</button> pages.</li>
+                            <li>Message frequency may vary</li>
+                        </ul>
+                    </section>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="bg-neutral-100 px-6 py-4 border-t border-neutral-200 flex items-center justify-between gap-4">
+                    <span class="text-xs text-neutral-500">Far West Pest Control Services Ltd.</span>
+                    <button type="button" onclick="closeTermsModal()" class="px-5 py-2.5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white font-extrabold text-xs sm:text-sm transition-colors">
+                        Close Terms &amp; Conditions
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:bottom-5 sm:right-5 z-50 hidden sm:max-w-sm bg-brand-black text-white px-5 py-4 rounded-2xl shadow-2xl border border-brand-red flex items-start gap-3">
+        <i data-lucide="check-circle" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
+        <div class="text-sm">
+            <p id="toast-title" class="font-bold text-white">Request Form Pre-Filled</p>
+            <p id="toast-desc" class="text-xs text-neutral-300 mt-0.5">Complete your contact details above to submit.</p>
+        </div>
+    </div>
+
+    <!-- APPLICATION JAVASCRIPT -->
+    <script>
+        // Privacy Policy & Terms Pop-Up Modal Controls
+        function openPrivacyModal() {
+            const termsModal = document.getElementById('terms-modal');
+            if (termsModal) termsModal.classList.add('hidden');
+
+            const modal = document.getElementById('privacy-modal');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function closePrivacyModal() {
+            const modal = document.getElementById('privacy-modal');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            const termsModal = document.getElementById('terms-modal');
+            if (!termsModal || termsModal.classList.contains('hidden')) {
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        function openTermsModal() {
+            const privacyModal = document.getElementById('privacy-modal');
+            if (privacyModal) privacyModal.classList.add('hidden');
+
+            const modal = document.getElementById('terms-modal');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function closeTermsModal() {
+            const modal = document.getElementById('terms-modal');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            const privacyModal = document.getElementById('privacy-modal');
+            if (!privacyModal || privacyModal.classList.contains('hidden')) {
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        function switchToPrivacyModal() {
+            openPrivacyModal();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const privacyModal = document.getElementById('privacy-modal');
+            if (privacyModal) {
+                privacyModal.addEventListener('click', (e) => {
+                    if (e.target === privacyModal || (e.target.parentElement === privacyModal && e.target === privacyModal.firstElementChild)) {
+                        closePrivacyModal();
+                    }
+                });
+            }
+
+            const termsModal = document.getElementById('terms-modal');
+            if (termsModal) {
+                termsModal.addEventListener('click', (e) => {
+                    if (e.target === termsModal || (e.target.parentElement === termsModal && e.target === termsModal.firstElementChild)) {
+                        closeTermsModal();
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closePrivacyModal();
+                closeTermsModal();
+            }
+        });
+
+        // 1. All 8 Core Services Catalog
+        const servicesData = [
+            {
+                id: 'rodents',
+                title: 'Rodent Control & Monthly Rodent Programs',
+                category: ['residential', 'commercial'],
+                badge: 'Core Service',
+                icon: 'shield-ban',
+                summary: 'Targeted rodent control and ongoing monthly rodent programs for homes, businesses, property managers, and vacation rentals.',
+                bullets: ['Active rodent elimination & monitoring', 'Monthly program options available', 'Service guarantees & re-treatments'],
+                serviceSelectValue: 'Rodent Control & Monthly Program',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'ants',
+                title: 'Ant Control',
+                category: ['residential', 'commercial'],
+                badge: 'Targeted Control',
+                icon: 'bug',
+                summary: 'Effective ant control targeting nests, structural entry points, and foraging trails across residential and commercial properties.',
+                bullets: ['Nest & entry point focus', 'Residential & commercial coverage', 'Re-treatments per guarantee'],
+                serviceSelectValue: 'Ant Control',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'wasps',
+                title: 'Wasps & Hornets',
+                category: ['residential', 'commercial'],
+                badge: 'Nest Removal',
+                icon: 'zap',
+                summary: 'Safe, controlled wasp and hornet nest removal around rooflines, siding, decks, yards, and high-traffic rental or commercial entries.',
+                bullets: ['Safe stinging-insect nest removal', 'Protects residents, guests & staff', 'Prompt local scheduling'],
+                serviceSelectValue: 'Wasps & Hornets',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'spiders',
+                title: 'Spider Control',
+                category: ['residential', 'commercial'],
+                badge: 'Coastal Pests',
+                icon: 'sparkles',
+                summary: 'Focused spider control and web management suited to coastal properties, eaves, garages, decks, and interior spaces.',
+                bullets: ['Interior & exterior spider management', 'Great for homes & vacation rentals', 'Unmarked vehicles on request'],
+                serviceSelectValue: 'Spider Control',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'exclusion',
+                title: 'Wildlife Exclusion',
+                category: ['residential', 'commercial'],
+                badge: 'Entry Proofing',
+                icon: 'lock',
+                summary: 'Sealing and proofing roofs, soffits, vents, and structural openings to block wildlife and rodents from entering.',
+                bullets: ['Targets structural entry points', 'Pairs with inspection & cleanouts', 'Long-term preventative protection'],
+                serviceSelectValue: 'Wildlife Exclusion',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'perimeter',
+                title: 'Preventative Seasonal Perimeter Sprays',
+                category: ['residential', 'commercial'],
+                badge: 'Seasonal Barrier',
+                icon: 'shield',
+                summary: 'Preventative seasonal perimeter spray treatments designed to keep crawling pests from moving indoors with changing seasons.',
+                bullets: ['Exterior protective barrier', 'Ideal for homes, rentals & sites', 'Scheduled seasonal maintenance'],
+                serviceSelectValue: 'Preventative Seasonal Perimeter Spray',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'crawlspace',
+                title: 'Crawlspace Cleanouts',
+                category: ['residential', 'commercial'],
+                badge: 'Deep Cleanout',
+                icon: 'layers',
+                summary: 'Thorough crawlspace cleanouts to clear pest debris, contaminated materials, and buildup in damp coastal sub-floor areas.',
+                bullets: ['Clears contaminated debris', 'Prepares space for exclusion', 'Suited to coastal homes & rentals'],
+                serviceSelectValue: 'Crawlspace Cleanout',
+                clientDefault: 'Residential Homeowner'
+            },
+            {
+                id: 'commercial-rentals',
+                title: 'Commercial, Property Manager & Vacation Rentals',
+                category: ['commercial'],
+                badge: 'Accounts & Rentals',
+                icon: 'building-2',
+                summary: 'Dedicated service for commercial accounts, property managers, and vacation rental companies needing dependable pest control.',
+                bullets: ['Property manager & rental support', 'Recurring schedules & monitoring', 'Discreet unmarked vehicles on request'],
+                serviceSelectValue: 'Commercial / Rental Program',
+                clientDefault: 'Property Manager'
+            }
+        ];
+
+        function renderServices(filter = 'all') {
+            const grid = document.getElementById('services-grid');
+            if (!grid) return;
+
+            const filtered = filter === 'all'
+                ? servicesData
+                : servicesData.filter(item => item.category.includes(filter));
+
+            grid.innerHTML = filtered.map(service => {
+                const isCommercial = service.category.length === 1 && service.category[0] === 'commercial';
+
+                return `
+                <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <div class="w-11 h-11 rounded-xl bg-neutral-100 text-brand-black group-hover:bg-brand-red group-hover:text-white flex items-center justify-center transition-colors">
+                                <i data-lucide="${service.icon}" class="w-5 h-5"></i>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold ${isCommercial ? 'bg-brand-black text-white' : 'bg-red-50 text-brand-red border border-red-200'}">
+                                ${service.badge}
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-black text-brand-black leading-snug">${service.title}</h3>
+                        <p class="text-xs sm:text-sm text-neutral-600 mt-2 leading-relaxed">${service.summary}</p>
+                        <ul class="mt-4 space-y-1.5 text-xs font-medium text-neutral-700 border-t border-neutral-100 pt-3.5">
+                            ${service.bullets.map(b => `
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-red shrink-0 mt-0.5"></i>
+                                    <span>${b}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3.5 border-t border-neutral-100 flex items-center justify-between">
+                        <span class="text-[11px] font-bold text-neutral-500">$125 Basic Inspection</span>
+                        <button onclick="prefillQuote('${service.clientDefault}', '${service.serviceSelectValue}', 'Service inquiry: ${service.title}')" class="inline-flex items-center gap-1 text-xs sm:text-sm font-black text-brand-red hover:text-brand-black transition-colors">
+                            <span>Request Service</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function filterServices(category) {
+            document.querySelectorAll('.service-tab').forEach(btn => {
+                btn.classList.remove('bg-brand-black', 'text-white', 'shadow-sm');
+                btn.classList.add('text-neutral-800');
+            });
+            const activeBtn = document.getElementById(`tab-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-neutral-800');
+                activeBtn.classList.add('bg-brand-black', 'text-white', 'shadow-sm');
+            }
+            renderServices(category);
+        }
+
+        // 2. Interactive Problem Finder & Inspection Guide
+        const finderState = {
+            client: 'residential',
+            service: 'rodents',
+            location: 'Ucluelet'
+        };
+
+        const clientLabels = {
+            'residential': 'Residential Home',
+            'commercial': 'Commercial Account',
+            'property-manager': 'Property Manager',
+            'vacation-rental': 'Vacation Rental'
+        };
+
+        const clientToFormMap = {
+            'residential': 'Residential Homeowner',
+            'commercial': 'Commercial Account',
+            'property-manager': 'Property Manager',
+            'vacation-rental': 'Vacation Rental Company'
+        };
+
+        const servicePlans = {
+            rodents: {
+                title: 'Rodent Control & Monthly Rodent Programs',
+                formValue: 'Rodent Control & Monthly Program',
+                steps: [
+                    'Inspect active rodent paths, nesting zones, and entry points',
+                    'Deploy control measures and set up monthly rodent monitoring if needed',
+                    'Back service with guarantees/re-treatments and unmarked vehicles on request'
+                ]
+            },
+            ants: {
+                title: 'Ant Control',
+                formValue: 'Ant Control',
+                steps: [
+                    'Locate ant trails, nesting areas, and structural entry gaps',
+                    'Apply targeted treatment to address activity and prevent recurrence',
+                    'Include follow-up/re-treatment options per service guarantee'
+                ]
+            },
+            wasps: {
+                title: 'Wasps & Hornets Nest Removal',
+                formValue: 'Wasps & Hornets',
+                steps: [
+                    'Assess nest height, location, and exposure around structures or yards',
+                    'Perform safe wasp/hornet treatment and nest removal',
+                    'Check surrounding eaves and voids for additional activity'
+                ]
+            },
+            spiders: {
+                title: 'Spider Control',
+                formValue: 'Spider Control',
+                steps: [
+                    'Inspect sheltered eaves, corners, garages, and exterior trim',
+                    'Clear webs and apply targeted spider control treatments',
+                    'Offer unmarked vehicles upon request for privacy'
+                ]
+            },
+            exclusion: {
+                title: 'Wildlife Exclusion',
+                formValue: 'Wildlife Exclusion',
+                steps: [
+                    'Identify roofline, soffit, vent, and foundation entry points',
+                    'Seal and proof openings to block wildlife and rodents',
+                    'Verify no trapped animals remain prior to sealing'
+                ]
+            },
+            perimeter: {
+                title: 'Preventative Seasonal Perimeter Sprays',
+                formValue: 'Preventative Seasonal Perimeter Spray',
+                steps: [
+                    'Inspect exterior perimeter, foundation lines, and entry thresholds',
+                    'Apply seasonal protective barrier spray for preventative coverage',
+                    'Schedule ongoing seasonal visits for homes, rentals, or businesses'
+                ]
+            },
+            crawlspace: {
+                title: 'Crawlspace Cleanouts',
+                formValue: 'Crawlspace Cleanout',
+                steps: [
+                    'Assess crawlspace conditions, access, and pest-related debris',
+                    'Carry out thorough crawlspace cleanout and sanitation prep',
+                    'Pair with wildlife exclusion or rodent control as needed'
+                ]
+            },
+            'commercial-program': {
+                title: 'Commercial, Property Manager & Vacation Rental Service',
+                formValue: 'Commercial / Rental Program',
+                steps: [
+                    'Tailor service schedule to business hours, units, or rental turnovers',
+                    'Combine monthly rodent programs, perimeter sprays, or targeted treatments',
+                    'Provide unmarked vehicles on request and dependable follow-through'
+                ]
+            }
+        };
+
+        function updateFinder(key, value) {
+            finderState[key] = value;
+
+            if (key === 'client') {
+                document.querySelectorAll('.finder-client-btn').forEach(btn => {
+                    const active = btn.getAttribute('data-val') === value;
+                    btn.className = active
+                        ? 'finder-client-btn p-3.5 rounded-xl border-2 border-brand-red bg-brand-red/15 text-left transition-all'
+                        : 'finder-client-btn p-3.5 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all';
+                });
+            }
+
+            if (key === 'service') {
+                document.querySelectorAll('.finder-srv-btn').forEach(btn => {
+                    const active = btn.getAttribute('data-val') === value;
+                    btn.className = active
+                        ? 'finder-srv-btn p-3 rounded-xl border-2 border-brand-red bg-brand-red/15 text-left transition-all'
+                        : 'finder-srv-btn p-3 rounded-xl border border-neutral-700 hover:border-neutral-500 bg-brand-black/60 text-left transition-all';
+                });
+            }
+
+            renderFinderResult();
+        }
+
+        function renderFinderResult() {
+            const plan = servicePlans[finderState.service];
+            if (!plan) return;
+
+            const isCoreHub = finderState.location === 'Ucluelet' || finderState.location === 'Tofino';
+
+            const badgeEl = document.getElementById('plan-badge');
+            const titleEl = document.getElementById('plan-title');
+            const rateEl = document.getElementById('plan-rate');
+            const rateSubEl = document.getElementById('plan-rate-sub');
+            const noteEl = document.getElementById('plan-note');
+            const stepsEl = document.getElementById('plan-steps');
+
+            if (badgeEl) badgeEl.textContent = `${clientLabels[finderState.client]} • ${finderState.location}`;
+            if (titleEl) titleEl.textContent = plan.title;
+
+            if (isCoreHub) {
+                if (rateEl) rateEl.textContent = '$125+';
+                if (rateSubEl) rateSubEl.textContent = `Basic inspection in ${finderState.location} is $125`;
+                if (noteEl) noteEl.textContent = 'No free estimates. $125 covers a standard basic inspection in Ucluelet or Tofino; difficult inspections or inspections taking more than an hour carry additional charges.';
+            } else {
+                if (rateEl) rateEl.textContent = '$125+ Travel';
+                if (rateSubEl) rateSubEl.textContent = `Base $125 + travel to ${finderState.location}`;
+                if (noteEl) noteEl.textContent = `No free estimates. Because ${finderState.location} is outside Ucluelet or Tofino, additional travel charges apply on top of the $125 basic inspection (plus any extra charge if difficult or over 1 hour).`;
+            }
+
+            if (stepsEl) {
+                stepsEl.innerHTML = plan.steps.map(step => `
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-red shrink-0 mt-0.5"></i>
+                        <span>${step}</span>
+                    </li>
+                `).join('');
+            }
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function applyFinderToForm() {
+            const plan = servicePlans[finderState.service];
+            const areaEl = document.getElementById('req-area');
+            const clientEl = document.getElementById('req-client-type');
+            const serviceEl = document.getElementById('req-service');
+            const notesEl = document.getElementById('req-notes');
+
+            if (areaEl) areaEl.value = finderState.location;
+            if (clientEl && clientToFormMap[finderState.client]) {
+                clientEl.value = clientToFormMap[finderState.client];
+            }
+            if (serviceEl && plan) {
+                serviceEl.value = plan.formValue;
+            }
+            if (notesEl && plan) {
+                notesEl.value = `${clientLabels[finderState.client]} in ${finderState.location} — ${plan.title}`;
+            }
+
+            focusInspectionForm();
+            showToast('Inspection Form Updated', `Pre-filled for ${finderState.location}.`);
+        }
+
+        function prefillQuote(clientType, serviceValue, noteText) {
+            const clientEl = document.getElementById('req-client-type');
+            const serviceEl = document.getElementById('req-service');
+            const notesEl = document.getElementById('req-notes');
+
+            if (clientEl && clientType) clientEl.value = clientType;
+            if (serviceEl && serviceValue) serviceEl.value = serviceValue;
+            if (notesEl && noteText) notesEl.value = noteText;
+
+            focusInspectionForm();
+            showToast('Service Selected', noteText || 'Ready to submit your inspection request.');
+        }
+
+        function focusInspectionForm() {
+            const formCard = document.getElementById('inspection-request');
+            const form = document.getElementById('inspection-quote-form');
+            const successBox = document.getElementById('quote-success');
+
+            if (form && form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+            }
+            if (successBox && !successBox.classList.contains('hidden')) {
+                successBox.classList.add('hidden');
+            }
+            if (formCard) {
+                formCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            const nameInput = document.getElementById('req-name');
+            if (nameInput) {
+                setTimeout(() => nameInput.focus({ preventScroll: true }), 250);
+            }
+        }
+
+        let toastTimeout = null;
+        function showToast(title, desc) {
+            const toast = document.getElementById('toast-banner');
+            const titleEl = document.getElementById('toast-title');
+            const descEl = document.getElementById('toast-desc');
+            if (!toast) return;
+
+            if (titleEl) titleEl.textContent = title;
+            if (descEl) descEl.textContent = desc;
+
+            toast.classList.remove('hidden');
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // Form Submission Handling (No alert())
+        const quoteForm = document.getElementById('inspection-quote-form');
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const nameEl = document.getElementById('req-name');
+                const phoneEl = document.getElementById('req-phone');
+                const areaEl = document.getElementById('req-area');
+                const serviceEl = document.getElementById('req-service');
+
+                const name = nameEl ? nameEl.value.trim() : '';
+                const phone = phoneEl ? phoneEl.value.trim() : '';
+                const area = areaEl ? areaEl.value : 'Ucluelet';
+                const service = serviceEl ? serviceEl.value : 'Inspection';
+
+                const successMsg = document.getElementById('quote-success-msg');
+                const successBox = document.getElementById('quote-success');
+                if (successMsg) {
+                    successMsg.textContent = `Thanks${name ? ', ' + name : ''}! Your ${service} request in ${area} has been recorded${phone ? ' (' + phone + ')' : ''}.`;
+                }
+                quoteForm.classList.add('hidden');
+                if (successBox) successBox.classList.remove('hidden');
+                showToast('Inspection Request Submitted', `Logged for ${area} — ${service}.`);
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            });
+        }
+
+        function resetQuoteForm() {
+            const form = document.getElementById('inspection-quote-form');
+            const successBox = document.getElementById('quote-success');
+            if (form) {
+                form.reset();
+                form.classList.remove('hidden');
+            }
+            if (successBox) successBox.classList.add('hidden');
+        }
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const menu = document.getElementById('mobile-menu');
+                const iconOpen = document.getElementById('menu-icon-open');
+                const iconClose = document.getElementById('menu-icon-close');
+                if (!menu) return;
+
+                const isHidden = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden');
+                if (iconOpen) iconOpen.classList.toggle('hidden', isHidden);
+                if (iconClose) iconClose.classList.toggle('hidden', !isHidden);
+            });
+        }
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('mobile-menu');
+                const iconOpen = document.getElementById('menu-icon-open');
+                const iconClose = document.getElementById('menu-icon-close');
+                if (menu && !menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                    if (iconOpen) iconOpen.classList.remove('hidden');
+                    if (iconClose) iconClose.classList.add('hidden');
+                }
+            });
+        });
+
+        // Initialize Page
+        const googleReviewsConfig = {
+            placeId: '', // Add your Google Place ID here (e.g., 'ChIJ...')
+            apiKey: '',  // Optional: Add a restricted Google Places API key or proxy endpoint
+            feedUrl: ''  // Optional: JSON endpoint returning { reviews: [{ author, rating, text, relativeTime }] }
+        };
+
+        function renderGoogleReviews(reviews) {
+            const grid = document.getElementById('reviews-grid');
+            if (!grid || !Array.isArray(reviews) || reviews.length === 0) return;
+
+            grid.innerHTML = reviews.slice(0, 6).map(rev => {
+                const author = rev.author || rev.author_name || 'Google Reviewer';
+                const ratingNum = Number(rev.rating || 5);
+                const stars = '★'.repeat(Math.max(1, Math.min(5, Math.round(ratingNum)))) + '☆'.repeat(Math.max(0, 5 - Math.round(ratingNum)));
+                const meta = rev.relativeTime || rev.relative_time_description || 'Google Review';
+                const text = rev.text || '';
+
+                return `
+                <div class="bg-white rounded-2xl border border-neutral-200 p-6 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <p class="text-xs font-black text-brand-red tracking-wider mb-2" aria-label="${ratingNum} out of 5 stars">${stars}</p>
+                        <p class="text-sm text-neutral-700 leading-relaxed">&ldquo;${text}&rdquo;</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
+                        <p class="text-xs font-black text-brand-black">${author}</p>
+                        <p class="text-[11px] text-neutral-500">${meta}</p>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        async function loadGoogleReviews() {
+            const statusEl = document.getElementById('google-reviews-status');
+            const embedContainer = document.getElementById('google-review-widget-embed');
+            const fallbackGrid = document.getElementById('reviews-grid');
+
+            if (embedContainer) {
+                const hasCustomEmbed = Array.from(embedContainer.childNodes).some(node => {
+                    if (node.nodeType === Node.ELEMENT_NODE) return true;
+                    if (node.nodeType === Node.TEXT_NODE) return node.textContent.trim().length > 0;
+                    return false;
+                });
+
+                if (hasCustomEmbed) {
+                    embedContainer.classList.remove('hidden');
+                    if (fallbackGrid) fallbackGrid.classList.add('hidden');
+                    if (statusEl) statusEl.textContent = '';
+                    return;
+                }
+            }
+
+            try {
+                if (googleReviewsConfig.feedUrl) {
+                    const res = await fetch(googleReviewsConfig.feedUrl);
+                    if (!res.ok) throw new Error('Feed request failed');
+                    const data = await res.json();
+                    const list = Array.isArray(data) ? data : (data.reviews || []);
+                    if (list.length > 0) {
+                        renderGoogleReviews(list);
+                        if (statusEl) statusEl.textContent = 'Showing live reviews from your connected Google review feed.';
+                        return;
+                    }
+                }
+
+                if (googleReviewsConfig.placeId && googleReviewsConfig.apiKey) {
+                    const endpoint = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${encodeURIComponent(googleReviewsConfig.placeId)}&fields=name,rating,user_ratings_total,reviews&key=${encodeURIComponent(googleReviewsConfig.apiKey)}`;
+                    const res = await fetch(endpoint);
+                    if (!res.ok) throw new Error('Google Places request failed');
+                    const data = await res.json();
+                    const placeReviews = data && data.result && Array.isArray(data.result.reviews) ? data.result.reviews : [];
+
+                    if (placeReviews.length > 0) {
+                        renderGoogleReviews(placeReviews);
+                        if (statusEl) {
+                            const ratingText = data.result.rating ? `Rated ${data.result.rating}★` : 'Google Reviews';
+                            const countText = data.result.user_ratings_total ? ` (${data.result.user_ratings_total} reviews)` : '';
+                            statusEl.textContent = `${ratingText}${countText} on Google.`;
+                        }
+                        return;
+                    }
+                }
+            } catch (err) {
+                console.warn('Google Reviews fallback active:', err);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+            renderServices('all');
+            renderFinderResult();
+            loadGoogleReviews();
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
